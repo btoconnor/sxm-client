@@ -112,7 +112,7 @@ def make_http_handler(
             if playlist:
                 response = web.Response(
                     status=200,
-                    body=bytes(playlist, "utf-8"),
+                    body=playlist,
                     headers={"Content-Type": "application/x-mpegURL"},
                 )
             else:
